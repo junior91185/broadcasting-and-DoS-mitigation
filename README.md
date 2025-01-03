@@ -13,43 +13,44 @@ This lab provided an opportunity to apply networking principles in a practical s
 
 ## Features
 
-- **Broadcasting**: Clients broadcast UDP messages to a server.
-- **Server Response**: The server listens for these broadcasts and responds to clients.
+- **Client-Server Communication**:
+    - Clients broadcast UDP messages to the server
+    - The server listens for broadcasts and responds dynamically to clients
 - **Anti-DoS Strategies**:
-  - Rate-limiting requests per client.
-  - Blacklisting abusive clients.
-  - Multithreaded request handling for scalability.
+  - Rate-limiting requests per client
+  - Blacklisting abusive clients
+  - Multithreaded request handling for scalability
 
 ---
 
 ## Screenshots and Results
 
-### 1. Server Blacklisting Implementation
-This screenshot demonstrates the server blacklisting a client for exceeding the request limit.
+### 1. Broadcasting in Action
+The client broadcasts messages to the server, which listens and responds in real-time
 
-![Anti-DoS Implementation](screenshots/anti_DoS_implementation.png)
+Here, the server is listening for broadcasts
 
----
+![Server Listening Results](screenshots/server_listening_results.png)
 
-### 2. Broadcasting Loop in Action
-Here’s the output from a client broadcasting continuously to the server.
-
-![Broadcasting Loop](screenshots/broadcasting_loop.gif)
-
----
-
-### 3. Client Broadcasting Results
-This shows the results of a successful client broadcast.
+Here are the results of a successful client broadcast
 
 ![Client Broadcasting Results](screenshots/client_broadcasting_results.png)
 
 ---
 
-### 4. Server Listening for Broadcasts
-The server captures and processes client broadcasts effectively.
+### 2. DoS Mitigation in Action
+Here, the server safeguards itself against excessive traffic by implementing rate limiting and blacklisting
 
-![Server Listening Results](screenshots/server_listening_results.png)
+![Anti-DoS Implementation](screenshots/anti_DoS_implementation.png)
 
+---
+
+### 3. Broadcasting Loop in Action
+Here’s the output from a client broadcasting continuously to the server
+
+![Broadcasting Loop](screenshots/broadcasting_loop.gif)
+
+---
 ---
 
 ## How to Run
