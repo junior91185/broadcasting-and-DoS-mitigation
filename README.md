@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project was developed as part of a hands-on lab for *Introduction to Cryptography and Computer Security - Fall 2024*. It demonstrates:
+This project was developed as part of a hands-on lab for *Introduction to Cryptography and Computer Security. It demonstrates:
 - Client-server communication using UDP.
 - Broadcasting messages from the client to the server.
 - Implementation of DoS (Denial of Service) mitigation strategies.
