@@ -20,7 +20,7 @@ try:
         except socket.timeout:
             print("No response received.")
         
-        #time.sleep(2)  # Wait for 2 seconds before the next broadcast
+        time.sleep(0.01)  # Wait for 0.01 seconds before the next broadcast
 except KeyboardInterrupt:
     print("Client stopped by user.")
 
