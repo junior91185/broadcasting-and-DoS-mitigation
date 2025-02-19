@@ -27,6 +27,8 @@ def handle_request(data, addr):
             if time.time() < blacklist[addr]:
                 print(f"Request from {addr} is blocked (blacklisted).")
                 return  # Ignore request as client is blacklisted
+            else:
+                del backlist[addr] #remove from backlist when time expires
 
     # Rate limiting: Check if the client is sending too many requests
     current_time = time.time()
