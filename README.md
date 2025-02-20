@@ -23,36 +23,6 @@ This lab provided an opportunity to apply networking principles in a practical s
 
 ---
 
-## Screenshots and Results
-
-### 1. Broadcasting in Action
-The client broadcasts messages to the server, which listens and responds in real-time
-
-Here, the server is listening for broadcasts
-
-![Server Listening Results](screenshots/server_listening_results.png)
-
-Here are the results of a successful client broadcast
-
-![Client Broadcasting Results](screenshots/client_broadcasting_results.png)
-
----
-
-### 2. DoS Mitigation in Action
-Here, the server safeguards itself against excessive traffic by implementing rate limiting and blacklisting
-
-![Anti-DoS Implementation](screenshots/anti_DoS_implementation.png)
-
----
-
-### 3. Broadcasting Loop in Action
-Here’s the output from a client broadcasting continuously to the server
-
-![Broadcasting Loop](screenshots/broadcasting_loop.gif)
-
----
----
-
 ## How to Run
 
 1. Clone the repository:
